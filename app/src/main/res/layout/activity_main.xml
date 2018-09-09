@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="276dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/bdiv"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_toEndOf="@+id/b."
+        android:onClick="div"
+        android:text="/"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/bsum"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/bsub"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/b9"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="sum"
+        android:text="+"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/bsub"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/b4"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/b9"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="sub"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="60dp" />
+
+
+    <Button
+        android:id="@+id/b7"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/b8"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B7"
+        android:text="7"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b8"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/bsub"
+        android:layout_toEndOf="@+id/b7"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B8"
+        android:text="8"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b9"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/b8"
+        android:layout_alignEnd="@+id/b6"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B9"
+        android:text="9"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/b1"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B4"
+        android:text="4"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/b4"
+        android:layout_toEndOf="@+id/b7"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B5"
+        android:text="5"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/b4"
+        android:layout_toStartOf="@+id/bdiv"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B6"
+        android:text="6"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/bdiv"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B1"
+        android:textAlignment="center"
+        android:text="1"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/bdiv"
+        android:layout_toEndOf="@+id/b7"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B2"
+        android:text="2"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/bdiv"
+        android:layout_toStartOf="@+id/bdiv"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B3"
+        android:text="3"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="equal"
+        android:text="="
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/b0"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_toEndOf="@+id/b"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="B0"
+        android:text="0"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/b."
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_toEndOf="@+id/b8"
+        android:onClick="B"
+        android:text="+/-"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/bmul"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/bdiv"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/b."
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="mul"
+        android:text="*"
+        android:textAlignment="center"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/bcl"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="90dp"
+        android:layout_height="83dp"
+        android:layout_above="@+id/bsum"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/et"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/b9"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="Bcl"
+        android:text="C"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="275dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et"
+        android:text=""
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/clear"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/et"
+        android:layout_toEndOf="@+id/et"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="clear"
+        android:text="cl"
+        android:textSize="50dp" />
+
+
+</RelativeLayout>
